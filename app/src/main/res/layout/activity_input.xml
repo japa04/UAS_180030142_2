@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/large_margin"
+    android:orientation="vertical"
+    tools:context=".InputActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/large_margin"
+        android:src="@drawable/ic_account_circle_black_24dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+
+    <EditText
+        android:id="@+id/edit_judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_margin"
+        android:autofillHints="@string/judul"
+        android:ems="10"
+        android:hint="@string/judul"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edit_penulis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_margin"
+        android:autofillHints="@string/penulis"
+        android:ems="10"
+        android:hint="@string/penulis"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edit_tahun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_margin"
+        android:autofillHints="@string/tahun"
+        android:ems="10"
+        android:hint="@string/tahun"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edit_penerbit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_margin"
+        android:autofillHints="@string/penerbit"
+        android:ems="10"
+        android:hint="@string/penerbit"
+        android:inputType="text" />
+
+    <RadioGroup
+        android:id="@+id/rg_jenis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/medium_margin"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/jenis_novel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/jenis_novel" />
+
+        <RadioButton
+            android:id="@+id/jenis_pengetahuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/jenis_pengetahuan" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_margin"
+        android:text="@string/save" />
+
+
+</LinearLayout>

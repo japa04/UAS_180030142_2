@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">UAS 180030142 2</string>
+    <string name="ganti_foto">Ganti Foto</string>
+    <string name="judul">Judul</string>
+    <string name="penulis">Penulis</string>
+    <string name="tahun">Tahun</string>
+    <string name="penerbit">Penerbit</string>
+    <string name="save">Simpan</string>
+    <string name="add">Tambah Kontak</string>
+    <string name="edit">Edit Kontak</string>
+    <string name="delete">Hapus Kontak</string>
+    <string name="jenis_novel">Novel</string>
+    <string name="jenis_pengetahuan">Pengetahuan</string>
+</resources>
